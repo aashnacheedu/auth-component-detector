@@ -132,3 +132,14 @@ Example output:
   "confidence": 0.9
 }
 ```
+
+## Live Deployment
+
+The application is deployed on Heroku for easy testing:
+
+Live URL:
+https://murmuring-spire-92271-57c33a791c3f.herokuapp.com/
+
+The deployed app supports:
+- Interactive web UI
+- API access via `/analyze`
