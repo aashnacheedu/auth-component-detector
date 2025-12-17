@@ -1,0 +1,98 @@
+/* style.css */
+
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Preset Buttons */
+#preset-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+button {
+  background: #007bff;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Input Section */
+#custom-url {
+  width: 70%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 0.5rem;
+}
+
+/* Result Card */
+#result {
+  margin-top: 1.5rem;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+#auth-status {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+#snippet {
+  max-height: 300px;
+  overflow: auto;
+  padding: 1rem;
+  border-radius: 5px;
+  background: #272822;
+  color: #f8f8f2;
+  font-family: monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #custom-url {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  #preset-buttons {
+    flex-direction: column;
+  }
+}
